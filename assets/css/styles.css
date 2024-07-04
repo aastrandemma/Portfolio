@@ -93,6 +93,14 @@ body {
     align-items: center;
 }
 
+.grid-container-four-columns-row-repeat {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 100px);
+    gap: 40px;
+    align-items: center;
+}
+
 /* Headings */
 body h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
