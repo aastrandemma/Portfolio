@@ -156,6 +156,28 @@ body {
     align-items: center;
 }
 
+/* Grid Items */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.grid-item-justify-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.first-column {
+    margin-left: 20%; 
+}
+
+.last-column {
+    margin-right: 20%; 
+}
+
 /* Headings */
 body h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -184,28 +206,6 @@ p.text {
 
 .list-group-item  {
     font-size: 1.125rem;
-}
-
-/* Grid Items */
-.grid-item {
-    display: flex;
-    justify-content: center;
-    align-items: left;
-}
-
-.grid-item-justify-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
-.first-column {
-    margin-left: 20%; 
-}
-
-.last-column {
-    margin-right: 20%; 
 }
 
 /* Images */
