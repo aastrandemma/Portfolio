@@ -27,6 +27,10 @@ body {
     background-color: #FAE3D9;
 }
 
+.pink {
+    background-color: #FFB6B9;
+}
+
 /* Borders */
 .pink-border-bottom {
     border-bottom: 1px solid #FFB6B9;
@@ -70,7 +74,7 @@ h1.h1-large-title {
     font-weight: 700;
 }
 
-h1.pink {
+.h1-pink {
     color: #FFB6B9;
     margin-bottom: 20px;
 }
