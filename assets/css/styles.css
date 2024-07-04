@@ -40,3 +40,63 @@ body {
 .nav-link:hover {
     font-weight: 700;
 }
+
+/* Content Spacing */
+.content-space {
+    padding: 60px 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+/* Grid Containers */
+.grid-container-two-columns {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Headings */
+body h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2, h3, h5{
+    font-weight: 700;
+}
+
+h1.h1-large-title {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+h1.pink {
+    color: #FFB6B9;
+    margin-bottom: 20px;
+}
+
+/* Text Styles */
+p.text  {
+    font-size: 24px;
+}
+
+/* Grid Items */
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+}
+
+.first-column {
+    margin-left: 20%; 
+}
+
+.last-column {
+    margin-right: 20%; 
+}
+
+/* Images */
+.profile-img {
+    width: 150px;
+    height: 150px;
+}
