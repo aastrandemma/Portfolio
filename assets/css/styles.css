@@ -1,0 +1,42 @@
+/* Basic Reset And Defaults */
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FAE3D9;
+    color: #000;
+    margin: 0;
+    box-sizing: border-box;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: 'Hind', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Background Colors */
+.beige {
+    background-color: #FAE3D9;
+}
+
+/* Borders */
+.pink-border-bottom {
+    border-bottom: 1px solid #FFB6B9;
+}
+
+/* Navigation Links */
+.nav-link, .nav-link:hover {
+    color: #000; 
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
