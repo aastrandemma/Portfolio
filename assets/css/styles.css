@@ -129,13 +129,6 @@ body {
     align-items: center;
 }
 
-.grid-container-contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    align-items: center;
-}
-
 /* Headings */
 body h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
@@ -167,13 +160,6 @@ p.text  {
     align-items: left;
 }
 
-.grid-item-contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-
 .first-column {
     margin-left: 20%; 
 }
@@ -189,7 +175,7 @@ p.text  {
 }
 
 .icon-img {
-    margin-right: 5px;
+    margin-right: 3px;
     width: 30px;
     height: 30px;
 }
@@ -200,8 +186,8 @@ p.text  {
         But the white in the icon make the position look wrong. 
     */
     margin-left: -3px; 
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
 }
 
 /* Override Bootstrap Card And Btn*/
