@@ -3,20 +3,37 @@
     box-sizing: border-box;
 }
 
+/* Set Default Font Size */
+html {
+    font-size: 16px; 
+}
+
+/* CSS Variables */
+:root {
+    --color-pink: #FFB6B9;
+    --color-beige: #FAE3D9;
+    --color-green: #C7FFD3;
+    --color-black: #000;
+    --font-size-base: 1rem; /* 16px */
+    --font-size-large: 1.5rem; /* 24px */
+    --font-size-xlarge: 3.75rem; /* 60px */
+    --font-size-xxlarge: 5rem; /* 80px */
+}
+
 /* Body Styles */
 body {
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background-color: #FAE3D9;
-    color: #000;
+    background-color: var(--color-beige);
+    color: var(--color-black);
     margin: 0;
     box-sizing: border-box;
     min-width: 320px;
     min-height: 100vh;
     font-family: 'Hind', sans-serif;
-    font-size: 18px;
+    font-size: var(--font-size-base);
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -24,25 +41,27 @@ body {
 
 /* Background Colors */
 .beige {
-    background-color: #FAE3D9;
+    background-color: var(--color-beige);
 }
 
 .pink {
-    background-color: #FFB6B9;
+    background-color: var(--color-pink);
 }
 
 /* Borders */
 .pink-border-bottom {
-    border-bottom: 1px solid #FFB6B9;
+    border-bottom: 0.0625rem solid;
+    border-color: var(--color-pink);
 }
 
 .pink-border-all {
-    border: 1px solid #FFB6B9;
+    border: 0.0625rem solid;
+    border-color: var(--color-pink);
 }
 
 /* Navigation Links */
 .nav-link, .nav-link:hover {
-    color: #000; 
+    color: var(--color-black); 
 }
 
 .nav-link:hover {
@@ -50,45 +69,46 @@ body {
 }
 
 .git-btn {
-    background-color: #FFB6B9;
-    border-color: #FAE3D9;
-    color: #000;
+    background-color: var(--color-pink);
+    border-color: var(--color-beige);
+    color: var(--color-black);
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .git-btn:hover {
-    background-color: #C7FFD3;
-    border: 1px solid #FFB6B9;
+    background-color: var(--color-green);
+    border: 0.0625rem solid;
+    border-color: var(--color-pink);
 }
 
-.git-btn-link, .btn.icon-link
-.icon-link, .icon-link:hover  {
-    color: #000;
+.icon-link, .git-btn-link {
+    color: var(--color-black);
     display: flex;
     align-items: center;
 }
 
 .icon-link:hover, .git-btn:hover {
-    color: #000;
+    color: var(--color-black);
     font-weight: 700;    
 }
 
 .icon-link:hover {
-    text-decoration: underline #FFB6B9;
+    text-decoration: underline;
+    text-decoration-color: var(--color-pink);
 }
 
 .icon-link, .icon-link:hover {
-    color: #000;
+    color: var(--color-black);
     display: flex;
     align-items: center;
-    font-size: 24px;
+    font-size: var(font-size-large);
 }
 
 /* Content Spacing */
 .content-space {
-    padding: 40px 20px;
+    padding: 2.5rem 1.25rem;
     max-width: 1200px; 
     margin: 0 auto;
 }
@@ -102,14 +122,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 1rem;
 }
 
 /* Grid Containers */
 .grid-container-two-columns {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    gap: 20px;
+    gap: 1rem;
     align-items: center;
 }
 
@@ -117,7 +137,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 50px;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -125,7 +145,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 100px);
-    gap: 40px;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -134,25 +154,29 @@ body h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3, h5{
+h2, h3, h5 {
     font-weight: 700;
 }
 
 h1.h1-large-title {
-    font-size: 60px;
+    font-size: var(--font-size-xlarge);
     font-weight: 700;
 }
 
 .h1-pink {
-    color: #FFB6B9;
-    font-size: 80px;
+    color: var(--color-pink);
+    font-size: var(--font-size-xxlarge);
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 }
 
 /* Text Styles */
-p.text  {
-    font-size: 24px;
+p.text {
+    font-size: var(font-size-large);
+}
+
+.list-group-item  {
+    font-size: 1.125rem;
 }
 
 /* Grid Items */
@@ -172,14 +196,14 @@ p.text  {
 
 /* Images */
 .profile-img {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
 }
 
 .icon-img {
-    margin-right: 3px;
-    width: 30px;
-    height: 30px;
+    margin-right: 0.1875rem;
+    width: 1.875rem;
+    height: 1.875rem;
 }
 
 .icon-email-img {
@@ -187,15 +211,15 @@ p.text  {
         I know it's wrong approach with negative numbers. 
         But the white in the icon make the position look wrong. 
     */
-    margin-left: -3px; 
-    width: 36px;
-    height: 36px;
+    margin-left: -0.1875rem; 
+    width: 2.25rem;
+    height: 2.25rem;
 }
 
 /* Override Bootstrap Card And Btn*/
 .card {
-    width: 500px !important; 
-    height: 250px !important;
+    width: 31.25rem;
+    height: 15.625rem;
 }
 
 .btn {
@@ -211,20 +235,30 @@ p.text  {
 
 /* Tags */
 .tags-container {
-    color: #000;
-    font-size: 16px;
     font-weight: 600;
     display: flex;
     align-items: flex-start;
     flex-wrap: wrap;
-    gap: 4px;
+    gap: 0.125rem;
 }
 
 .tags-container p {
     display: flex;
-    padding: 2px 6px;
+    padding: 0.125rem 0.375rem;
     align-items: flex-start;
-    background-color: #C7FFD3;
-    margin: 4px;
+    background-color: var(--color-green);
+    margin: 0.25rem;
     font-family: 'Montserrat', sans-serif;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .grid-container-two-columns {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-container-four-columns-row-repeat {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
 }
